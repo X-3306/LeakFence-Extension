@@ -1,0 +1,110 @@
+{
+  "manifest_version": 3,
+  "name": "LeakFence Local",
+  "short_name": "LeakFence",
+  "version": "0.1.0",
+  "version_name": "0.1.0 MVP",
+  "description": "Local-first secret leak prevention for AI chats and prompt boxes.",
+  "minimum_chrome_version": "116",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://claude.ai/*",
+    "https://gemini.google.com/*",
+    "https://copilot.microsoft.com/*",
+    "https://www.bing.com/*",
+    "https://perplexity.ai/*",
+    "https://www.perplexity.ai/*",
+    "https://poe.com/*",
+    "https://chat.deepseek.com/*",
+    "https://chat.mistral.ai/*",
+    "https://lechat.mistral.ai/*",
+    "https://meta.ai/*",
+    "https://x.com/*",
+    "https://grok.com/*",
+    "https://huggingface.co/chat/*",
+    "https://you.com/*",
+    "https://www.blackbox.ai/*",
+    "https://chat.qwen.ai/*",
+    "https://www.canva.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "LeakFence Local",
+    "default_popup": "ui/popup.html",
+    "default_icon": {
+      "16": "assets/icon.png",
+      "32": "assets/icon.png",
+      "48": "assets/icon.png",
+      "128": "assets/icon.png"
+    }
+  },
+  "options_page": "ui/options.html",
+  "icons": {
+    "16": "assets/icon.png",
+    "32": "assets/icon.png",
+    "48": "assets/icon.png",
+    "128": "assets/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*",
+        "https://copilot.microsoft.com/*",
+        "https://www.bing.com/*",
+        "https://perplexity.ai/*",
+        "https://www.perplexity.ai/*",
+        "https://poe.com/*",
+        "https://chat.deepseek.com/*",
+        "https://chat.mistral.ai/*",
+        "https://lechat.mistral.ai/*",
+        "https://meta.ai/*",
+        "https://x.com/*",
+        "https://grok.com/*",
+        "https://huggingface.co/chat/*",
+        "https://you.com/*",
+        "https://www.blackbox.ai/*",
+        "https://chat.qwen.ai/*",
+        "https://www.canva.com/*"
+      ],
+      "js": ["src/page-guard.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true,
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*",
+        "https://copilot.microsoft.com/*",
+        "https://www.bing.com/*",
+        "https://perplexity.ai/*",
+        "https://www.perplexity.ai/*",
+        "https://poe.com/*",
+        "https://chat.deepseek.com/*",
+        "https://chat.mistral.ai/*",
+        "https://lechat.mistral.ai/*",
+        "https://meta.ai/*",
+        "https://x.com/*",
+        "https://grok.com/*",
+        "https://huggingface.co/chat/*",
+        "https://you.com/*",
+        "https://www.blackbox.ai/*",
+        "https://chat.qwen.ai/*",
+        "https://www.canva.com/*"
+      ],
+      "js": ["src/content-script.js"],
+      "css": ["src/content-style.css"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ]
+}

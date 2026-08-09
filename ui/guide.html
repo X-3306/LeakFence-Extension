@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LeakFence Local Guide</title>
+    <link rel="stylesheet" href="guide.css">
+  </head>
+  <body>
+    <main class="guide">
+      <header class="intro">
+        <p class="eyebrow">AI prompt safety</p>
+        <h1>Keep secrets out of AI chats</h1>
+        <p>
+          LeakFence Local pauses paste and submit actions on supported AI chats,
+          checks the text locally, and blocks API keys, tokens, private keys,
+          IDs, recovery phrases, and secrets you protected manually.
+        </p>
+      </header>
+
+      <section class="panel">
+        <h2>No server, no cloud scan</h2>
+        <p>
+          Exact secrets are stored as local HMAC fingerprints in your browser
+          profile. Pattern Guard runs locally. Your secrets, fingerprints, and
+          audit events are not sent to the developer.
+        </p>
+      </section>
+
+      <section class="panel trust">
+        <h2>How privacy is enforced</h2>
+        <ul>
+          <li>There is no remote scanning endpoint in the extension.</li>
+          <li>Prompt text is evaluated locally by the content script and background worker.</li>
+          <li>Protected exact secrets are converted into local HMAC fingerprints before storage.</li>
+          <li>Audit entries stay in <code>chrome.storage.local</code> and never include plaintext secrets.</li>
+          <li>
+            The source code is public at
+            <a href="https://github.com/X-3306/LeakFence-Extension" target="_blank" rel="noreferrer">github.com/X-3306/LeakFence-Extension</a>.
+          </li>
+        </ul>
+      </section>
+
+      <section class="steps">
+        <article>
+          <strong>1</strong>
+          <h2>Add private values</h2>
+          <p>Protect values that do not have obvious patterns, such as internal tokens or client IDs.</p>
+        </article>
+        <article>
+          <strong>2</strong>
+          <h2>Use AI normally</h2>
+          <p>LeakFence only activates on supported AI chat origins listed in the options page.</p>
+        </article>
+        <article>
+          <strong>3</strong>
+          <h2>Paste gets paused</h2>
+          <p>If the text is clean, it is inserted. If not, the paste stays blocked.</p>
+        </article>
+        <article>
+          <strong>4</strong>
+          <h2>Paste redacted</h2>
+          <p>When possible, LeakFence offers a version with detected secrets replaced by placeholders.</p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2>Built-in detections</h2>
+        <p>
+          Pattern Guard can catch common OpenAI, GitHub, AWS, Google, Stripe and
+          Slack keys, JWTs, private key blocks, recovery phrase contexts, IBANs,
+          and PESEL numbers.
+        </p>
+      </section>
+
+      <section class="panel limits">
+        <h2>Honest limits</h2>
+        <p>
+          LeakFence helps stop accidental prompt leaks. It cannot protect you
+          from malware, a malicious extension, a compromised browser profile, or
+          an AI page that changes in a way the extension no longer observes.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

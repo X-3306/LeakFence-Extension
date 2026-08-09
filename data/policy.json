@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "version": 2,
+  "generatedAt": "2026-08-08T00:00:00.000Z",
+  "expiresAt": "2027-08-08T00:00:00.000Z",
+  "services": [
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "authorizedOrigins": ["https://chatgpt.com"],
+      "loginUrls": ["https://chatgpt.com/"]
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "authorizedOrigins": ["https://claude.ai"],
+      "loginUrls": ["https://claude.ai/"]
+    },
+    {
+      "id": "gemini",
+      "name": "Google Gemini",
+      "authorizedOrigins": ["https://gemini.google.com"],
+      "loginUrls": ["https://gemini.google.com/"]
+    },
+    {
+      "id": "copilot",
+      "name": "Microsoft Copilot",
+      "authorizedOrigins": ["https://copilot.microsoft.com", "https://www.bing.com"],
+      "loginUrls": ["https://copilot.microsoft.com/"]
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "authorizedOrigins": ["https://perplexity.ai", "https://www.perplexity.ai"],
+      "loginUrls": ["https://www.perplexity.ai/"]
+    },
+    {
+      "id": "poe",
+      "name": "Poe",
+      "authorizedOrigins": ["https://poe.com"],
+      "loginUrls": ["https://poe.com/"]
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek Chat",
+      "authorizedOrigins": ["https://chat.deepseek.com"],
+      "loginUrls": ["https://chat.deepseek.com/"]
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral Le Chat",
+      "authorizedOrigins": ["https://chat.mistral.ai", "https://lechat.mistral.ai"],
+      "loginUrls": ["https://chat.mistral.ai/"]
+    },
+    {
+      "id": "meta-ai",
+      "name": "Meta AI",
+      "authorizedOrigins": ["https://meta.ai"],
+      "loginUrls": ["https://meta.ai/"]
+    },
+    {
+      "id": "grok",
+      "name": "Grok",
+      "authorizedOrigins": ["https://x.com", "https://grok.com"],
+      "loginUrls": ["https://x.com/i/grok", "https://grok.com/"]
+    },
+    {
+      "id": "huggingchat",
+      "name": "HuggingChat",
+      "authorizedOrigins": ["https://huggingface.co"],
+      "loginUrls": ["https://huggingface.co/chat/"]
+    },
+    {
+      "id": "you-com",
+      "name": "You.com AI",
+      "authorizedOrigins": ["https://you.com"],
+      "loginUrls": ["https://you.com/"]
+    },
+    {
+      "id": "blackbox",
+      "name": "Blackbox AI",
+      "authorizedOrigins": ["https://www.blackbox.ai"],
+      "loginUrls": ["https://www.blackbox.ai/"]
+    },
+    {
+      "id": "qwen",
+      "name": "Qwen Chat",
+      "authorizedOrigins": ["https://chat.qwen.ai"],
+      "loginUrls": ["https://chat.qwen.ai/"]
+    },
+    {
+      "id": "canva-ai",
+      "name": "Canva AI",
+      "authorizedOrigins": ["https://www.canva.com"],
+      "loginUrls": ["https://www.canva.com/"]
+    }
+  ]
+}
