@@ -47,7 +47,7 @@ You.com AI, Blackbox AI, Qwen Chat, and Canva AI.
 
 ## Not Guaranteed
 
-- It does not inspect arbitrary websites anymore.
+- It does not inspect arbitrary websites.
 - It does not protect against malware, keyloggers, malicious extensions, or a
   compromised browser profile.
 - It cannot inspect every possible browser/runtime exfiltration path.
