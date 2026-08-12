@@ -1,4 +1,4 @@
-![LeakFence](/assets/banner.png)
+![LeakFence](/assets/banner1.png)
 
 # LeakFence Local
 
