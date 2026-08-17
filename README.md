@@ -12,8 +12,8 @@ sent.
 There is NO account, NO developer server, NO telemetry, and NO upload of
 passwords, hashes, fingerprints, prompts, or audit events.
 
-The project is open source so this privacy claim can be checked directly in the
-code: https://github.com/X-3306/LeakFence-Extension
+## Install
+https://chromewebstore.google.com/detail/ebfbbbljfmppofkkealknbaihfoajioi?utm_source=item-share-cb
 
 ## Core Invariant
 
@@ -52,7 +52,4 @@ You.com AI, Blackbox AI, Qwen Chat, and Canva AI.
   compromised browser profile.
 - It cannot inspect every possible browser/runtime exfiltration path.
 - Pattern detection is conservative and may miss unusual formats.
-
-## Install
-https://chromewebstore.google.com/detail/ebfbbbljfmppofkkealknbaihfoajioi?utm_source=item-share-cb
 
