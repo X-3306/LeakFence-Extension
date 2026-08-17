@@ -54,5 +54,5 @@ You.com AI, Blackbox AI, Qwen Chat, and Canva AI.
 - Pattern detection is conservative and may miss unusual formats.
 
 ## Install
-
+https://chromewebstore.google.com/detail/ebfbbbljfmppofkkealknbaihfoajioi?utm_source=item-share-cb
 
