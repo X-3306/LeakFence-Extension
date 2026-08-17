@@ -66,5 +66,3 @@ locally, and inserts the text only if allowed.
 - There is no developer server in the MVP.
 - There is no telemetry, analytics endpoint, account system, or remote scanning
   endpoint.
-- The code is public at https://github.com/X-3306/LeakFence-Extension so these
-  claims can be independently verified.
